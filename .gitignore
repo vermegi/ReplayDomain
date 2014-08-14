@@ -135,7 +135,6 @@ UpgradeLog*.htm
 App_Data/*.mdf
 App_Data/*.ldf
 
-
 #LightSwitch generated files
 GeneratedArtifacts/
 _Pvt_Extensions/
@@ -158,28 +157,10 @@ $RECYCLE.BIN/
 # Mac desktop service store files
 .DS_Store
 
-# ===========================
-# Project specific
-# ===========================
-_run/TestResult.*
-/src/NHS/nCrunchTemp_dd5e3163-d104-49a9-94cb-11481af9b5a5
-
-
-# ===========================
+# ==========================
 # Javascript / CSS source files
 # ===========================
 
 #*.css.map
 #*.js.map
 
-# ===========================
-# Generated css files
-# ===========================
-
-#/src/NHS/Content/App/Less/*.css
-
-# ===========================
-# Webessentials settings
-# ===========================
-
-/src/Webessentials.json
