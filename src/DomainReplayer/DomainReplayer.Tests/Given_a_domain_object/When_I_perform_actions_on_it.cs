@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
+using DomainReplayer.FakeDomain;
 using Xunit;
 
 namespace DomainReplayer.Tests.Given_a_domain_object
@@ -14,29 +14,5 @@ namespace DomainReplayer.Tests.Given_a_domain_object
             var changes = sut.GetChanges();
             Assert.Equal(1, changes.Count());
         }
-    }
-
-    public class ADomainObject
-    {
-        private readonly List<DomainEvent> _listOfChanges;
-
-        public ADomainObject()
-        {
-            _listOfChanges = new List<DomainEvent>();
-        }
-
-        public void DoSomething()
-        {
-            _listOfChanges.Add(new DomainEvent());
-        }
-
-        public IEnumerable<DomainEvent> GetChanges()
-        {
-            return _listOfChanges;
-        }
-    }
-
-    public class DomainEvent
-    {
     }
 }
